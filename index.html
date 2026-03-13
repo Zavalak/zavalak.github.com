@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AAA Honest HVAC | Precision Climate Redefined</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        body { background-color: #0F172A; }
+        .h-black { font-family: 'Archivo Black', sans-serif; }
+        
+        /* Fluid Typography: Prevents clipping on mobile */
+        .hero-title {
+            font-size: clamp(2.2rem, 8vw, 5.5rem);
+            line-height: 0.85;
+            letter-spacing: -0.04em;
+        }
+
+        /* Container to hide overflow during entry animations */
+        .reveal-container { overflow: hidden; }
+
+        /* Custom glow for the 'Sexy' CTA */
+        .btn-glow:hover {
+            box-shadow: 0 0 20px rgba(184, 115, 51, 0.6);
+            transform: translateY(-2px);
+        }
+    </style>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body class="text-slate-300 font-['Inter'] selection:bg-[#B87333] selection:text-white antialiased overflow-x-hidden">
+
+    <header class="fixed top-0 w-full z-[100] bg-[#0F172A]/90 backdrop-blur-2xl border-b border-white/5 px-8 py-6 flex justify-between items-center">
+        <div class="h-black text-2xl tracking-tighter leading-none">
+            <span class="text-[#B87333] italic">AAA</span> <span class="text-white">HONEST HVAC</span>
+        </div>
+        <nav class="hidden md:flex gap-10 text-[10px] font-black tracking-[0.3em] text-white/40">
+            <a href="#services" class="hover:text-[#B87333] transition-colors">SERVICES</a>
+            <a href="#pricing" class="hover:text-[#B87333] transition-colors">MEMBERSHIP</a>
+            <a href="#contact" class="hover:text-[#B87333] transition-colors">CONTACT</a>
+        </nav>
+        <a href="tel:7042189286" class="hidden sm:block text-[10px] font-black tracking-[0.2em] text-[#B87333] border border-[#B87333]/40 px-6 py-3 hover:bg-[#B87333] hover:text-white transition-all rounded-sm uppercase font-bold">
+            (704) 218-9286
+        </a>
+    </header>
+
+    <section class="relative h-screen flex items-center px-8 lg:px-24 overflow-hidden">
+        <div class="absolute inset-0 grayscale opacity-20 bg-[url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2070')] bg-cover bg-center"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-[#0F172A] via-[#0F172A]/70 to-transparent"></div>
+        
+        <div class="relative z-10 max-w-5xl mt-12">
+            <div class="reveal-container">
+                <h1 id="hero-title" class="h-black hero-title text-white uppercase mb-10">
+                    Precision Climate.<br />
+                    <span class="text-[#B87333] block sm:inline">Redefining HVAC.</span>
+                </h1>
+            </div>
+            
+            <div class="reveal-container">
+                <p id="hero-sub" class="text-lg text-slate-400 max-w-xl font-light leading-relaxed border-l-2 border-[#B87333] pl-6 uppercase tracking-widest">
+                    Kannapolis, NC. Elite Engineering. Absolute Transparency.
+                </p>
+            </div>
+
+            <div id="hero-cta" class="mt-12 opacity-0">
+                <a href="#contact" class="btn-glow inline-block px-10 py-5 bg-[#B87333] text-white text-[10px] font-black tracking-[0.4em] uppercase hover:bg-white hover:text-black transition-all shadow-[0_10px_30px_rgba(184,115,51,0.3)] active:scale-95">
+                    Request Evaluation
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-40 px-8 relative overflow-hidden bg-black/10">
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <span class="text-9xl font-serif text-[#B87333]/10 block mb-4 italic leading-none">“</span>
+            <p class="text-2xl md:text-3xl text-slate-200 leading-[1.4] italic font-light tracking-tight">
+                We founded AAA Honest HVAC on a simple realization: our neighbors are tired of the guesswork. We treat your home’s efficiency as our own—delivering long-term reliability without the corporate markup.
+            </p>
+            <div class="mt-16 h-px w-24 bg-[#B87333] mx-auto opacity-50"></div>
+        </div>
+    </section>
+
+    <script>
+        // Placeholder for Contact Form Logic
+        const successMessage = "One of our experts will reach out shortly to ensure your home's efficiency is our priority.";
+    </script>
+
+    <footer class="py-24 border-t border-white/5 text-center bg-black/40">
+        <div class="mb-16 flex flex-col items-center">
+            <span class="h-black text-5xl text-[#B87333] italic tracking-tighter leading-none">AAA</span>
+            <span class="text-[11px] tracking-[0.6em] font-black text-white uppercase mt-2 leading-none">Honest HVAC LLC</span>
+        </div>
+        <p class="text-[#B87333]/40 text-[9px] tracking-[0.4em] mb-12 max-w-lg mx-auto leading-loose font-black uppercase px-6">
+            Absolute technical precision. Total pricing transparency. The integrity of a North Carolina handshake.
+        </p>
+        <p class="text-[10px] tracking-[0.5em] text-slate-700 uppercase font-black italic">© 2026 AAA Honest HVAC LLC • Licensed & Insured</p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        window.addEventListener('load', () => {
+            const tl = gsap.timeline({ defaults: { ease: "power4.out" } });
+
+            tl.from("#hero-title", {
+                x: -120,
+                opacity: 0,
+                duration: 1.5,
+                elastic: "period: 0.3, amplitude: 1"
+            })
+            .from("#hero-sub", {
+                y: 60,
+                opacity: 0,
+                duration: 1.2
+            }, "-=1.0")
+            .to("#hero-cta", {
+                opacity: 1,
+                y: -15, 
+                duration: 1,
+                ease: "back.out(1.7)"
+            }, "-=0.8");
+        });
+    </script>
+</body>
+</html>
