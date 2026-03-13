@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AAA Honest HVAC | Precision Climate Control</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0F172A; scroll-behavior: smooth; }
+        .font-header { font-family: 'Archivo Black', sans-serif; }
+        
+        /* 🎨 THE SCROLLING GRADIENT EFFECT */
+        .gradient-text {
+            background: linear-gradient(
+                to right, 
+                #B87333 20%, 
+                #EAB308 40%, 
+                #EAB308 60%, 
+                #B87333 80%
+            );
+            background-size: 200% auto;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            animation: shine 4s linear infinite;
+        }
+
+        @keyframes shine {
+            to { background-position: 200% center; }
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0F172A; }
+        ::-webkit-scrollbar-thumb { background: #B87333; border-radius: 10px; }
+        
+        .hidden-state { display: none; }
+    </style>
+</head>
+<body class="text-slate-300 selection:bg-[#B87333] selection:text-white">
+
+    <header class="fixed top-0 w-full z-50 bg-[#0F172A]/80 backdrop-blur-xl border-b border-white/5 px-8 py-5 flex justify-between items-center">
+        <div class="font-header text-xl tracking-tighter">
+            <span class="text-[#B87333] uppercase">AAA</span> <span class="text-white uppercase">Honest HVAC</span>
+        </div>
+        <nav class="hidden md:flex gap-10 text-[10px] font-bold tracking-[0.3em] text-white/60">
+            <a href="#services" class="hover:text-[#B87333] transition-colors uppercase">Services</a>
+            <a href="#pricing" class="hover:text-[#B87333] transition-colors uppercase">Membership</a>
+            <a href="#contact" class="hover:text-[#B87333] transition-colors uppercase">Contact</a>
+        </nav>
+    </header>
+
+    <section class="relative h-screen flex items-center px-8 lg:px-24 overflow-hidden">
+        <div class="absolute inset-0 grayscale opacity-20 bg-[url('https://images.unsplash.com/photo-1581094288338-2314dddb7e8c?q=80&w=2070')] bg-cover bg-center"></div>
+        
+        <div class="relative z-10 max-w-5xl">
+            <h1 class="text-6xl lg:text-[110px] font-header text-white leading-[0.9] uppercase mb-4 tracking-tighter">
+                Precision Climate<br />
+                Control.
+            </h1>
+            <h2 class="text-4xl lg:text-6xl font-header uppercase tracking-tighter mb-8">
+                <span class="gradient-text">Redefining HVAC.</span>
+            </h2>
+            <p class="text-lg text-slate-400 max-w-xl font-light leading-relaxed border-l-2 border-[#B87333] pl-6 uppercase tracking-widest">
+                Kannapolis, NC. Elite Engineering. Absolute Transparency.
+            </p>
+        </div>
+    </section>
+
+    <section class="py-32 px-8 max-w-6xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
+        <div class="relative">
+            <span class="text-[12rem] font-serif text-[#B87333]/10 absolute -top-24 -left-12 italic">“</span>
+            <p class="text-2xl text-slate-200 leading-relaxed italic relative z-10">
+                We founded AAA Honest HVAC on a simple realization: our neighbors are tired of the guesswork. We treat your home’s efficiency as our own—delivering long-term reliability without the corporate markup.
+            </p>
+        </div>
+        <div class="h-px bg-slate-800 w-full hidden lg:block"></div>
+    </section>
+
+    <section id="services" class="py-24 px-8 bg-slate-900/20">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-6">
+            <div class="p-12 border border-slate-800 bg-[#0F172A] hover:border-[#B87333]/40 transition-all group">
+                <h3 class="font-header text-white uppercase mb-4 tracking-tighter">Precision Install</h3>
+                <p class="text-[11px] leading-relaxed opacity-60 uppercase tracking-widest text-slate-400">Architectural integration for Furnaces, Heat Pumps, and Mini Splits.</p>
+            </div>
+            <div class="p-12 border border-slate-800 bg-[#0F172A] hover:border-[#B87333]/40 transition-all group">
+                <h3 class="font-header text-white uppercase mb-4 tracking-tighter">Expert Repair</h3>
+                <p class="text-[11px] leading-relaxed opacity-60 uppercase tracking-widest text-slate-400">Surgical troubleshooting for coils, motors, and refrigerant leaks.</p>
+            </div>
+            <div class="p-12 border border-slate-800 bg-[#0F172A] hover:border-[#B87333]/40 transition-all group">
+                <h3 class="font-header text-white uppercase mb-4 tracking-tighter">Maintenance</h3>
+                <p class="text-[11px] leading-relaxed opacity-60 uppercase tracking-widest text-slate-400">Seasonal optimization to protect your investment and efficiency.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="py-32 px-8 overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-16">
+                <h2 class="text-4xl font-header text-white uppercase tracking-tighter">Annual <span class="text-[#B87333]">Value</span></h2>
+                <p class="text-[10px] tracking-[0.4em] text-slate-500 mt-2 uppercase">Comparative Savings Analysis</p>
+            </div>
+            
+            <div class="overflow-x-auto pb-12">
+                <table class="w-full border-collapse min-w-[900px]">
+                    <thead>
+                        <tr class="border-b border-slate-800">
+                            <th class="p-6 text-left text-[10px] uppercase tracking-[0.2em] text-slate-500 font-bold">Service Component</th>
+                            <th class="p-8 text-center text-slate-400 text-[10px] tracking-widest uppercase">One-Time<br><span class="text-2xl font-header text-white">$0.00</span></th>
+                            <th class="p-8 text-center text-slate-400 text-[10px] tracking-widest uppercase">Non-Member<br><span class="text-2xl font-header text-white">$0.00</span></th>
+                            <th class="p-8 text-center text-slate-400 text-[10px] tracking-widest uppercase">Basic<br><span class="text-2xl font-header text-white">$249.99</span></th>
+                            <th class="p-8 text-center bg-[#B87333]/10 border-x border-t border-[#B87333] text-[10px] tracking-widest uppercase">Premium<br><span class="text-2xl font-header text-white">$499.99</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-slate-800/40">
+                            <td class="p-6 text-sm">First On-Site Diagnostic</td>
+                            <td class="p-6 text-center text-slate-500">$0.00</td><td class="p-6 text-center text-slate-500">$79.99</td><td class="p-6 text-center text-slate-500">Waived</td><td class="p-6 text-center text-[#B87333] font-bold bg-[#B87333]/5 border-x border-[#B87333]">Waived</td>
+                        </tr>
+                        <tr class="border-b border-slate-800/40">
+                            <td class="p-6 text-sm">Second On-Site Diagnostic</td>
+                            <td class="p-6 text-center text-slate-500">$0.00</td><td class="p-6 text-center text-slate-500">$69.99</td><td class="p-6 text-center text-slate-500">$49.99</td><td class="p-6 text-center text-[#B87333] font-bold bg-[#B87333]/5 border-x border-[#B87333]">Waived</td>
+                        </tr>
+                        <tr class="border-b border-slate-800/40">
+                            <td class="p-6 text-sm">Potential Repair ($200)</td>
+                            <td class="p-6 text-center text-slate-500">---</td><td class="p-6 text-center text-slate-500">$199.99</td><td class="p-6 text-center text-slate-500">$199.99</td><td class="p-6 text-center text-[#B87333] font-bold bg-[#B87333]/5 border-x border-[#B87333]">$169.99</td>
+                        </tr>
+                        <tr class="border-b border-slate-800/40">
+                            <td class="p-6 text-sm">Spring Check ($250 Value)</td>
+                            <td class="p-6 text-center text-slate-500">$249.99</td><td class="p-6 text-center text-slate-500">$249.99</td><td class="p-6 text-center text-slate-500">INCLUDED</td><td class="p-6 text-center text-[#B87333] font-bold bg-[#B87333]/5 border-x border-[#B87333]">INCLUDED</td>
+                        </tr>
+                        <tr class="border-b border-slate-800/40">
+                            <td class="p-6 text-sm">Fall Check ($250 Value)</td>
+                            <td class="p-6 text-center text-slate-500">$249.99</td><td class="p-6 text-center text-slate-500">$249.99</td><td class="p-6 text-center text-slate-500">INCLUDED</td><td class="p-6 text-center text-[#B87333] font-bold bg-[#B87333]/5 border-x border-[#B87333]">INCLUDED</td>
+                        </tr>
+                        <tr class="border-b border-slate-800/40">
+                            <td class="p-6 text-sm text-[#B87333] font-black uppercase tracking-widest">Total Est. Savings</td>
+                            <td class="p-6 text-center text-slate-500">$0.00</td><td class="p-6 text-center text-slate-500">$0.00</td><td class="p-6 text-center text-white font-bold">$370.00</td><td class="p-6 text-center border-x border-b border-[#B87333] text-[#B87333] font-black tracking-tighter italic bg-[#B87333]/5">$190.00+ & VIP</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 px-6 bg-[#0F172A]">
+        <div class="max-w-4xl mx-auto">
+            <div id="form-container">
+                <h2 class="text-4xl font-header text-white uppercase mb-4 tracking-tighter">Secure Your <span class="text-[#B87333]">Expert</span></h2>
+                <form id="hvac-form" class="space-y-4">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <input type="text" placeholder="NAME" required class="w-full bg-slate-900 border border-slate-800 p-5 text-xs tracking-widest text-white focus:border-[#B87333] outline-none transition-all">
+                        <input type="tel" placeholder="PHONE" required class="w-full bg-slate-900 border border-slate-800 p-5 text-xs tracking-widest text-white focus:border-[#B87333] outline-none transition-all">
+                    </div>
+                    <textarea placeholder="SERVICE REQUIREMENTS" rows="4" class="w-full bg-slate-900 border border-slate-800 p-5 text-xs tracking-widest text-white focus:border-[#B87333] outline-none transition-all"></textarea>
+                    <button type="submit" class="w-full py-6 bg-[#B87333] text-white font-bold uppercase tracking-[0.4em] text-xs hover:tracking-[0.5em] transition-all">Submit Request</button>
+                </form>
+            </div>
+            <div id="success-container" class="hidden-state text-center py-20 border border-[#B87333]/30 bg-slate-900/20">
+                <h3 class="text-2xl font-header text-white uppercase mb-6">Thank you for trusting us.</h3>
+                <a href="tel:7042189286" class="text-2xl font-header text-[#B87333] tracking-tighter">(704) 218-9286</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-slate-900 text-center">
+        <p class="text-[10px] tracking-[0.5em] text-slate-600 uppercase">© 2026 AAA Honest HVAC LLC • Licensed & Insured</p>
+    </footer>
+
+    <script>
+        document.getElementById('hvac-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            document.getElementById('form-container').classList.add('hidden-state');
+            document.getElementById('success-container').classList.remove('hidden-state');
+        });
+    </script>
+</body>
+</html>
